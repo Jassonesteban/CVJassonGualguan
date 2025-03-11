@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { BsSun, BsMoon, BsGlobe } from "react-icons/bs";
 import { Montserrat } from "next/font/google";
+import {useCvData} from "../context/CVcontext";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -10,6 +11,12 @@ const montserrat = Montserrat({
 
 export default function Navbar() {
   const [theme, setTheme] = useState("light");
+  const {lang, changeLanguage} = useCvData();
+
+  const toggleLanguage = () => {
+    const newLang = lang === "es" ? "en" : "es";
+    changeLanguage(newLang);
+  }
 
   const toggleTheme = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
@@ -39,14 +46,15 @@ export default function Navbar() {
         JG
       </h1>
       <div className="flex space-x-4">
-        <button className="w-12 h-12 flex items-center justify-center text-black dark:text-white border border-transparent hover:border-white dark:hover:border-white rounded-lg transition">
-          <BsGlobe size={24} />
+        <button onClick={toggleLanguage} className="cursor-pointer w-22 h-22 flex items-center justify-center text-black dark:text-white border border-transparent hover:border-white dark:hover:border-white rounded-lg transition">
+          <BsGlobe size={44} />
+          <span className="ml-2 text-sm">{lang.toUpperCase()}</span>
         </button>
         <button
           onClick={toggleTheme}
-          className="w-12 h-12 flex items-center justify-center text-black dark:text-white border border-transparent hover:border-white dark:hover:border-white rounded-lg transition"
+          className="cursor-pointer w-22 h-22 flex items-center justify-center text-black dark:text-white border border-transparent hover:border-white dark:hover:border-white rounded-lg transition"
         >
-          {theme === "dark" ? <BsSun size={34} /> : <BsMoon size={34} />}
+          {theme === "dark" ? <BsSun size={44} /> : <BsMoon size={34} />}
         </button>
       </div>
     </nav>
