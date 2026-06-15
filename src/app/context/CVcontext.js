@@ -2,8 +2,8 @@
 
 import { createContext, useContext, useEffect, useState } from "react";
 
-import infoSpanish from "../infoCV/infoSpanish.json";
-import infoEnglish from "../infoCV/infoEnglish.json";
+import infoSpanish from "../../../infoCV/infoSpanish.json";
+import infoEnglish from "../../../infoCV/infoEnglish.json";
 
 const CVcontext = createContext();
 
