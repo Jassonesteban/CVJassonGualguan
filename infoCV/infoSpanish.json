@@ -212,5 +212,25 @@
                 "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
             }
         ]
-    }
+    },
+    "Inteligencia Artificial": [
+        {
+            "Titulo": "Desarrollo de Agentes de IA con AWS Bedrock",
+            "Empresa": "SOLATI",
+            "Responsabilidad": "Diseño e implementación de agentes de IA entrenados específicamente para automatizar flujos de cobranzas y chats de atención al cliente. Responsable de la integración directa de estos agentes en la plataforma Adminfo de la empresa, configurando el modelo para actuar con el rol de un asesor financiero, optimizando la recuperación de cartera y mejorando los tiempos de respuesta automatizada.",
+            "Pila tecnologica": "AWS Bedrock, Python, Docker."
+        },
+        {
+            "Titulo": "Implementación de Soluciones de IA para Optimización de Procesos",
+            "Empresa": "SOLATI",
+            "Responsabilidad": "Desarrollo y configuración de 'Gemas' personalizadas impulsadas por Gemini para la automatización de tareas críticas de ingeniería. Implementación de soluciones enfocadas en la optimización de consultas SQL, gestión avanzada de bases de datos, flujos automatizados de Git y el refinamiento/estructuración de historias de usuario bajo metodologías ágiles.",
+            "Pila tecnologica": "Gemini, SQL, Git, Scrum/Historias de Usuario."
+        },
+        {
+            "Titulo": "Implementación de Agentes de Ingeniería con KIRO y Amazon Q",
+            "Empresa": "SOLATI",
+            "Responsabilidad": "Integración del framework de KIRO potenciado con Claude Sonnet, junto con Amazon Q, para la auditoría y análisis automatizado de repositorios. Implementación de soluciones a requerimientos técnicos puntuales, corrección de bugs en tiempo real, refactorización de funciones complejas y generación automatizada de pruebas unitarias para garantizar la estabilidad del software.",
+            "Pila tecnologica": "KIRO, Claude Sonnet, Amazon Q, Test Unitarios."
+        }
+    ]
 }

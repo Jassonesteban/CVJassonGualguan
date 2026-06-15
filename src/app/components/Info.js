@@ -4,6 +4,7 @@ import {Roboto} from 'next/font/google';
 import Image from "next/image";
 import StackTechnology from "./stack_technology";
 import WorkExperience from "./workExperience";
+import ArtificialIntelligence from "./ArtificialIntelligence";
 import { motion } from "framer-motion";
 import Footer from "./Footer";
 
@@ -55,6 +56,10 @@ export default function Info() {
       <section className="mt-20">
       <h1 className={`text-5xl text-left mb-10 ${roboto.className}`}>{translations[lang].experiencia}</h1>
         <WorkExperience work={data["Experiencia profesional"]}/>
+      </section>
+      <section className="mt-20">
+        <h1 className={`text-5xl text-left mb-10 ${roboto.className}`}>{translations[lang].inteligencia_artificial}</h1>
+        <ArtificialIntelligence work={data["Inteligencia Artificial"]}/>
       </section>
       <section className="mt-20">
         <Footer vitalInfo={data} />
