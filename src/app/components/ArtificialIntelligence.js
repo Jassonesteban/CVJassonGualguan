@@ -1,8 +1,6 @@
 "use client";
-import {
-  FaBriefcase,
-  FaMicrochip,
-} from "react-icons/fa";
+import { useState } from "react";
+import { FaBriefcase, FaMicrochip } from "react-icons/fa";
 import { Roboto } from "next/font/google";
 
 const roboto = Roboto({
@@ -11,6 +9,8 @@ const roboto = Roboto({
 });
 
 export default function ArtificialIntelligence({ ia }) {
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
   if (!ia || ia.length === 0) return null;
 
   return (
@@ -31,20 +31,24 @@ export default function ArtificialIntelligence({ ia }) {
           {ia[0].Empresa}
         </h2>
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
         {ia.map((job, index) => {
           const tags = job["Pila tecnologica"]
             ? job["Pila tecnologica"].split(",").map((tag) => tag.trim())
             : [];
 
+          const isExpanded = expandedIndex === index;
+          const limit = 160;
+          const shouldTruncate = job.Responsabilidad.length > limit;
+          const textToShow = isExpanded ? job.Responsabilidad : `${job.Responsabilidad.substring(0, limit)}...`;
+
           return (
             <div
               key={index}
-              // Estilo Clean Tech: Fondo blanco puro, bordes finos, y en hover un brillo cyan limpio con sombra flotante
               className="p-6 bg-white rounded-2xl border border-gray-200/80 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:shadow-[0_10px_30px_rgba(6,182,212,0.08)] group"
             >
               <div>
-                {/* Header de la Card estilo metadatos de consola */}
                 <div className="flex justify-between items-center mb-4">
                   <span className="text-[10px] font-bold text-gray-400 font-mono tracking-widest uppercase">
                     {index + 1}
@@ -57,7 +61,6 @@ export default function ArtificialIntelligence({ ia }) {
                   )}
                 </div>
 
-                {/* Título del Proyecto */}
                 <h3
                   className={`text-xl font-bold text-gray-800 group-hover:text-cyan-600 transition-colors duration-300 mb-3 leading-tight flex items-start ${roboto.className}`}
                 >
@@ -68,13 +71,20 @@ export default function ArtificialIntelligence({ ia }) {
                   {job.Titulo}
                 </h3>
 
-                {/* Descripción / Responsabilidad */}
-                <p className="text-gray-600 text-sm text-justify leading-relaxed font-normal">
-                  {job.Responsabilidad}
+                <p className="text-gray-600 text-sm text-justify leading-relaxed font-normal inline">
+                  {textToShow}
                 </p>
+
+                {shouldTruncate && (
+                  <button
+                    onClick={() => setExpandedIndex(isExpanded ? null : index)}
+                    className="text-xs font-bold text-cyan-600 hover:text-cyan-700 ml-1 font-mono transition-colors duration-150 inline-block focus:outline-none"
+                  >
+                    {isExpanded ? "[Ver menos]" : "[Ver más]"}
+                  </button>
+                )}
               </div>
 
-              {/* 🏷️ TAGS SEMI-TRANSPARENTES DE TECNOLOGÍA */}
               {tags.length > 0 && (
                 <div className="mt-6 border-t border-gray-100 pt-4">
                   <div className="flex flex-wrap gap-1.5">
