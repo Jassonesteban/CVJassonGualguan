@@ -16,12 +16,9 @@ export default function ArtificialIntelligence({ ia }) {
   if (!ia || ia.length === 0) return null;
 
   return (
-    // 🥼 Fondo claro impecable con un grid de fondo sutil tipo ingeniería
     <section className="py-14 md:mb-20 bg-gray-50/50 rounded-3xl my-6 border border-gray-200/60 shadow-sm relative overflow-hidden max-w-7xl mx-auto px-6">
-      {/* 🧬 Decoración Clean-Tech: Un destello de luz cyan ultra-suave en el fondo */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-100/40 rounded-full blur-[100px] pointer-events-none" />
 
-      {/* 🚀 ENCABEZADO ESTILO LABORATORIO TECNOLÓGICO */}
       <div className="border-l-4 border-cyan-500 pl-4 mb-12 relative z-10">
         <div className="flex items-center gap-2">
           <FaMicrochip className="text-cyan-600 animate-pulse" size={14} />
@@ -49,8 +46,6 @@ export default function ArtificialIntelligence({ ia }) {
           </div>
         </div>
       </div>
-
-      {/* 🎛️ GRID DE PROYECTOS (Cards Claras estilo IA) */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
         {ia.map((job, index) => {
           const tags = job["Pila tecnologica"]
@@ -67,7 +62,6 @@ export default function ArtificialIntelligence({ ia }) {
                 {/* Header de la Card estilo metadatos de consola */}
                 <div className="flex justify-between items-center mb-4">
                   <span className="text-[10px] font-bold text-gray-400 font-mono tracking-widest uppercase">
-                    {"// module_0"}
                     {index + 1}
                   </span>
                   {job.Actualmente === "true" && (
