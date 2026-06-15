@@ -76,7 +76,7 @@ export default function Info() {
         <h1 className={`text-5xl text-left mb-10 ${roboto.className}`}>
           {translations[lang].inteligencia_artificial}
         </h1>
-        <ArtificialIntelligence work={data["Inteligencia Artificial"]} />
+        <ArtificialIntelligence ia={data["Inteligencia Artificial"]} />
       </section>
       <section className="mt-20">
         <Footer vitalInfo={data} />
