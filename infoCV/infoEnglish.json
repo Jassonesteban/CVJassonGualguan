@@ -1,0 +1,208 @@
+{
+    "Titulo": "Resume Jasson Gualguan",
+    "Nombre": "Jasson Esteban Gualguan Guzmán",
+    "Email": "jgualguanguzman@gmail.com",
+    "Telefono": "+573105433935",
+    "URL_LINKEDIN": "https://www.linkedin.com/in/jassongg/",
+    "URL_GITHUB": "https://github.com/Jassonesteban",
+    "Ubicacion": "Colombia",
+    "Ciudad": "Medellin",
+    "Profesion": "Computer Engineer",
+    "Universidad": "Politécnico Colombiano Jaime Isaza Cadavid",
+    "Año graduacion": "2014-2020",
+    "Registro_tarjeta_profesional": "R2022046404 - 0112460645788 ANT",
+    "logo": "",
+    "Perfil profesional": {
+        "Descripcion": "I'm Jasson Gualguan, a Software Engineer with 5 years of experience building efficient and scalable solutions. Passionate about code quality and software development best practices."
+    },
+    "Experiencia profesional": [
+        {
+            "Titulo": "Development Analyst - Level 3 | Full Stack",
+            "Empresa": "SOLATI",
+            "Fecha_inicio": "April 2025",
+            "Fecha_fin": "Present",
+            "Ubicacion": "Medellín, Colombia",
+            "Responsabilidad": "Development and maintenance of web applications using Spring Boot and native PHP under MVC architecture. Design of secure APIs in Python utilizing API Gateway and AWS Cognito for private database access. Continuous implementation of software solutions with PHP, JS, and Python (Docker), integrating business logic with AI agents via AWS Bedrock. Supervision and diagnostics of failures in GitLab CI/CD pipelines to ensure proper code integration and testing prior to QA/UAT deployment. Version control management with Git and active collaboration under Scrum methodology.",
+            "Pila tecnologica": "Backend: Java (Spring Boot, Spring Security, Spring Data JPA, Spring WebFlux), PHP 7/8, Python. Frontend: HTML5, CSS3, JavaScript (ES6+), DOM Manipulation, Fetch API / AJAX, PHP Views. Database: SQL (MySQL, PostgreSQL). DevOps & Tools: GitLab, Git, Docker, CI/CD, AWS (Cognito, API Gateway, Bedrock, VPC).",
+            "Actualmente": "true"
+        },
+        {
+            "Titulo": "Development Analyst - Full Stack",
+            "Empresa": "CIDENET S.A.S",
+            "Fecha_inicio": "May 2022",
+            "Fecha_fin": "January 2025",
+            "Ubicacion": "Medellín, Colombia",
+            "Responsabilidad": "Development and maintenance of web applications with Spring Boot and Angular, implementing REST APIs, authentication with Spring Security, and database access with Spring Data JPA. Creation of dynamic interfaces with Angular and state management with RxJS. Use of Docker and Azure DevOps for CI/CD, version control with Git, and teamwork under the Scrum methodology.",
+            "Pila tecnologica": "Backend: Java (Spring Boot, Spring Security, Spring Data JPA, Spring WebFlux). Frontend: Angular, TypeScript, RxJS. Database: SQL (MySQL, PostgreSQL). DevOps & Tools: Azure DevOps, Git, Docker, CI/CD, AWS.",
+            "Actualmente": "false"
+        },
+        {
+            "Titulo": "Full Stack DEV",
+            "Empresa": "Talent.com",
+            "Fecha_inicio": "September 2020",
+            "Fecha_fin": "May 2022",
+            "Ubicacion": "Medellín, Colombia",
+            "Responsabilidad": "Development of internal applications and algorithms for information extraction, implementing Spring Boot, Node.js, and PHP. Creation of REST APIs with Spring MVC and Express, authentication with JWT, and Frontend development with Angular. Database management with MongoDB and MySQL, deployment on Firebase and Heroku, and use of Docker for containerization. Teamwork under Scrum, collaborating with teams in Colombia and Canada.",
+            "Pila tecnologica": "Backend: Spring Boot, Node.js (Express), PHP (Laravel). Frontend: Angular, TypeScript, Bootstrap, Ionic. Databases: MySQL, MongoDB, Firebase. DevOps & Tools: Git, Docker, Firebase, Heroku, CI/CD.",
+            "Actualmente": "false"
+        }
+    ],
+    "idiomas": [
+        {
+            "nombre": "Spanish",
+            "nivel": "Native",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spanish/spanish-original.svg"
+        },
+        {
+            "nombre": "English",
+            "nivel": "B2 Beginner",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/english/english-original.svg"
+        }
+    ],
+    "educacion": {
+        "titulo": "Computer Engineer",
+        "tipo": "Engineering",
+        "institucion": "Politécnico Colombiano Jaime Isaza Cadavid",
+        "ubicacion": "Medellín, Colombia",
+        "periodo": "2014 – 2022",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/7/71/Escudo_del_Politecnico_Colombiano_Jaime_Isaza_Cadavid.svg"
+    },
+    "habilidades_tecnicas": {
+        "lenguajes_de_programacion": [
+            {
+                "nombre": "Java",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+            },
+            {
+                "nombre": "PHP",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+            },
+            {
+                "nombre": "Phyton",
+                "logo": "https://almacenamientojson.blob.core.windows.net/imgs/python.png"
+            },
+            {
+                "nombre": "TypeScript",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+            },
+            {
+                "nombre": "Node.js",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            }
+        ],
+        "frontend": [
+            {
+                "nombre": "HTML",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            },
+            {
+                "nombre": "CSS",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            },
+            {
+                "nombre": "JavaScript",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            },
+            {
+                "nombre": "Angular",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+            },
+            {
+                "nombre": "React.js",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            }
+        ],
+        "backend": [
+            {
+                "nombre": "Spring",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+            },
+            {
+                "nombre": "Express.js",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+            },
+            {
+                "nombre": "Next.js",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+            },
+            {
+                "nombre": "Laravel",
+                "logo": "https://almacenamientojson.blob.core.windows.net/imgs/laravel.png"
+            }
+        ],
+        "bases_de_datos": [
+            {
+                "nombre": "MySQL",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+            },
+            {
+                "nombre": "PostgreSQL",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+            },
+            {
+                "nombre": "MongoDB",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+            }
+        ],
+        "cloud_devops": [
+            {
+                "nombre": "AWS",
+                "logo": "https://almacenamientojson.blob.core.windows.net/imgs/amazonwebservices.png"
+            },
+            {
+                "nombre": "Azure",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+            },
+            {
+                "nombre": "Firebase",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+            },
+            {
+                "nombre": "Heroku",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg"
+            },
+            {
+                "nombre": "Railway",
+                "logo": "https://railway.com/brand/logo-light.png"
+            }
+        ],
+        "control_de_versiones": [
+            {
+                "nombre": "Git",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+            },
+            {
+                "nombre": "GitHub",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            }
+        ],
+        "contenedores_ci_cd": [
+            {
+                "nombre": "Docker",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+            },
+            {
+                "nombre": "Jenkins",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"
+            },
+            {
+                "nombre": "GitLab",
+                "logo": "https://almacenamientojson.blob.core.windows.net/imgs/gitlab.png"
+            }
+        ],
+        "herramientas_diseno": [
+            {
+                "nombre": "Tailwind CSS",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+            },
+            {
+                "nombre": "Bootstrap",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+            },
+            {
+                "nombre": "Flutter",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+            }
+        ]
+    }
+}

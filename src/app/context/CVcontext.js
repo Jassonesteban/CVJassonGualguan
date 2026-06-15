@@ -2,6 +2,9 @@
 
 import { createContext, useContext, useEffect, useState } from "react";
 
+import infoSpanish from "../infoCV/infoSpanish.json";
+import infoEnglish from "../infoCV/infoEnglish.json";
+
 const CVcontext = createContext();
 
 export const CvProvider = ({ children }) => {
@@ -47,28 +50,22 @@ export const CvProvider = ({ children }) => {
   const changeLanguage = (newLang) => {
     setLang(newLang);
     setLoading(true);
-    fetch(
-      newLang === "es"
-        ? "https://almacenamientojson.blob.core.windows.net/json-files/infoSpanish.json"
-        : "https://almacenamientojson.blob.core.windows.net/json-files/infoEnglish.json"
-    )
-      .then((response) => {
-        if (!response.ok) throw new Error("Error al obtener el JSON");
-        return response.json();
-      })
-      .then((data) => {
-        setData(data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        setError(error.message);
-        setLoading(false);
-      });
+    try {
+      // En vez de hacer fetch por red, seteamos el JSON local directo en memoria
+      const selectedData = newLang === "es" ? infoSpanish : infoEnglish;
+      
+      setData(selectedData);
+      setError(null); // Limpiamos errores si los hubiera antes
+    } catch (err) {
+      setError("Error al cargar los datos locales del CV", err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   useEffect(() => {
     changeLanguage(lang);
-  }, []);
+  }, [lang]);
 
   return (
     <CVcontext.Provider value={{ data, loading, error, lang, changeLanguage, translations }}>
