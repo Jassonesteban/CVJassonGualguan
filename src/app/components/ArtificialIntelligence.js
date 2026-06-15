@@ -3,7 +3,7 @@ import {
   FaBriefcase,
   FaMapMarkerAlt,
   FaCalendarAlt,
-  FaCpu,
+  FaMicrochip,
 } from "react-icons/fa";
 import { Roboto } from "next/font/google";
 
@@ -24,7 +24,7 @@ export default function ArtificialIntelligence({ ia }) {
       {/* 🚀 ENCABEZADO ESTILO LABORATORIO TECNOLÓGICO */}
       <div className="border-l-4 border-cyan-500 pl-4 mb-12 relative z-10">
         <div className="flex items-center gap-2">
-          <FaCpu className="text-cyan-600 animate-pulse" size={14} />
+          <FaMicrochip className="text-cyan-600 animate-pulse" size={14} />
           <span className="text-cyan-600 text-xs font-bold tracking-widest font-mono uppercase">
             Sistemas & Agentes Autónomos
           </span>
