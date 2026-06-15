@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Roboto } from "next/font/google";
-// @ts-ignore: allow importing global CSS without type declarations
+// @ts-expect-error: allow importing global CSS without type declarations
 import "./globals.css";
 import {Providers} from "./config/providers";
 
