@@ -72,7 +72,7 @@ export default function Info() {
         </h1>
         <WorkExperience work={data["Experiencia profesional"]} />
       </section>
-      <section className="mt-30">
+      <section className="mt-20">
         <h1 className={`text-5xl text-left mb-10 ${roboto.className}`}>
           {translations[lang].inteligencia_artificial}
         </h1>

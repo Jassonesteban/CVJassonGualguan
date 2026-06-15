@@ -1,8 +1,6 @@
 "use client";
 import {
   FaBriefcase,
-  FaMapMarkerAlt,
-  FaCalendarAlt,
   FaMicrochip,
 } from "react-icons/fa";
 import { Roboto } from "next/font/google";
@@ -22,29 +20,16 @@ export default function ArtificialIntelligence({ ia }) {
       <div className="border-l-4 border-cyan-500 pl-4 mb-12 relative z-10">
         <div className="flex items-center gap-2">
           <FaMicrochip className="text-cyan-600 animate-pulse" size={14} />
-          <span className="text-cyan-600 text-xs font-bold tracking-widest font-mono uppercase">
-            Sistemas & Agentes Autónomos
+          <span className="text-cyan-600 text-sm font-bold tracking-widest font-mono uppercase">
+            Herramientas de Inteligencia Artificial
           </span>
         </div>
 
         <h2
-          className={`text-3xl font-extrabold text-gray-900 mt-1 tracking-tight ${roboto.className}`}
+          className={`text-2xl font-extrabold text-gray-900 mt-1 tracking-tight ${roboto.className}`}
         >
           {ia[0].Empresa}
         </h2>
-
-        <div className="flex flex-wrap gap-5 text-sm text-gray-500 mt-2 font-normal font-mono">
-          <div className="flex items-center gap-1.5">
-            <FaMapMarkerAlt className="text-gray-400" />
-            <span>Medellín, Colombia</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <FaCalendarAlt className="text-gray-400" />
-            <span className="text-emerald-600 font-semibold">
-              Enero 2025 - Actualmente
-            </span>
-          </div>
-        </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
         {ia.map((job, index) => {
